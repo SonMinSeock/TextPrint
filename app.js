@@ -11,8 +11,6 @@ const onSubmit = (event) => {
   let inputTextArea = textarea.value;
   let print = "";
 
-  context.innerText = inputTextArea;
-
   for (let i = 0; i < inputTextArea.length; i++) {
     if (inputTextArea[i] === "\n") {
       console.log(inputTextArea.slice(0, i + 1));
